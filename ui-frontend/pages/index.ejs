@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <%- include("components/head.ejs")%>
+    <div id="content">
+        <div id="notice">
+            <div id="noticeImg">               
+            </div>
+            <div id="noticeTitle">
+                第三届江苏省科协青年会员创新创业大赛决赛正式启动
+            </div>
+        </div>
+        <div id="news">
+            <%- include("components/scroll.ejs")%>
+            <div id="impNews">
+                <div id="newTop">
+                    <div class="newTitle">
+                        要闻快递
+                    </div>
+                </div>
+                <div id="newList">
+                    <ul>
+                        <li>中国机器人制造商正在影响世界</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="workInto">
+                <div id="societyTitle">
+                    
+                </div>
+                <div id="exam"></div>
+                <div id="society"></div>
+                <div id="societyInfo"></div>
+            </div>
+
+        </div>
+        <div id="celebr"></div>
+        <div id="showImg"></div>
+        <div id="bottom">
+            <div id="left">
+                <div id="science"></div>
+                <div id="wechat"></div>
+            </div>
+            <div id="right">
+                <div id="company"></div>
+                <div id="contact"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include("components/foot.ejs")%>
+</body>
+</html>
